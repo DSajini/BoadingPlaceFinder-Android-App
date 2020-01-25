@@ -6,5 +6,172 @@
     android:layout_height="match_parent"
     tools:context="com.hfad.boadingplacefinder.SignUpActivity">
 
-    
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="67dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/firstname"
+        android:layout_alignBottom="@+id/firstname"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/firstname"
+        android:layout_toRightOf="@+id/firstname"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/lastname"
+        android:layout_alignLeft="@+id/firstname"
+        android:layout_alignStart="@+id/firstname"
+        android:text="First Name :" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lastname"
+        android:layout_alignStart="@+id/lastname"
+        android:layout_alignTop="@+id/textView"
+        android:text="Last Name :" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/teleno"
+        android:layout_alignStart="@+id/teleno"
+        android:layout_below="@+id/firstname"
+        android:layout_marginTop="11dp"
+        android:text="Telephone Number :" />
+
+    <EditText
+        android:id="@+id/teleno"
+        android:layout_width="317dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/firstname"
+        android:layout_alignStart="@+id/firstname"
+        android:layout_below="@+id/textView6"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/teleno"
+        android:layout_alignStart="@+id/teleno"
+        android:layout_below="@+id/teleno"
+        android:layout_marginTop="11dp"
+        android:text="Email :" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="317dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_below="@+id/textView7"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email"
+        android:layout_centerVertical="true"
+        android:text="Username :" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="317dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_below="@+id/textView9"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignStart="@+id/username"
+        android:layout_below="@+id/username"
+        android:text="Password :" />
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_below="@+id/textView10"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/password2"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/lastname"
+        android:layout_alignStart="@+id/lastname"
+        android:layout_below="@+id/textView11"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/password2"
+        android:layout_alignStart="@+id/password2"
+        android:layout_below="@+id/username"
+        android:text="Retype Passweord :" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/password1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="Sign Up" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/password1"
+        android:layout_alignStart="@+id/password1"
+        android:layout_below="@+id/signup"
+        android:layout_marginTop="13dp"
+        android:text="Already have an account?" />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
 </RelativeLayout>
