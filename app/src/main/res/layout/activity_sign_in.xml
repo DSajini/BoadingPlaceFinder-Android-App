@@ -7,5 +7,66 @@
     tools:context="com.hfad.boadingplacefinder.SignInActivity">
 
 
+    <EditText
+        android:id="@+id/Etusername"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
 
+    <EditText
+        android:id="@+id/Etpassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/Etusername"
+        android:layout_alignStart="@+id/Etusername"
+        android:layout_below="@+id/Etusername"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/passwordText"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/usernameText"
+        android:layout_alignRight="@+id/usernameText"
+        android:layout_below="@+id/Etusername"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Password :" />
+
+    <TextView
+        android:id="@+id/usernameText"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/passwordText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Username :" />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Etusername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+
+        android:text="Sign In" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/signin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="49dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:text="Don't you have an account?" />
 </RelativeLayout>
